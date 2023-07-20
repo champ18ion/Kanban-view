@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <aside>
+      <div class="menu">
+        <img
+          width="20"
+          height="20"
+          src="https://img.icons8.com/ios-glyphs/30/menu--v1.png"
+          alt="menu--v1"
+        />
+        <span class="logo"> logo here</span>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item-header">
+          <span>Manage</span>
+          <span
+            ><img
+              width="16"
+              height="16"
+              src="https://img.icons8.com/material/24/sort-down--v1.png"
+              alt="sort-down--v1"
+          /></span>
+        </div>
+        <div class="menu-item-list">
+          <li>Moderate</li>
+          <li>Tags</li>
+          <li>Compliance</li>
+          <li>Payments</li>
+          <li>Advanced Settings</li>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item-header">
+          <span>Users</span>
+          <span
+            ><img
+              width="16"
+              height="16"
+              src="https://img.icons8.com/material/24/sort-down--v1.png"
+              alt="sort-down--v1"
+          /></span>
+        </div>
+        <div class="menu-item-list">
+          <li>Admin</li>
+          <li>Client</li>
+          <li>Contracts</li>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item-header">
+          <span>Engagements</span>
+          <span
+            ><img
+              width="16"
+              height="16"
+              src="https://img.icons8.com/material/24/sort-down--v1.png"
+              alt="sort-down--v1"
+          /></span>
+        </div>
+        <div class="menu-item-list">
+          <li id="btn-blue"><span>Projects</span></li>
+          <li>Calls</li>
+          <li>Calendar</li>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item-header">
+          <span>Experts</span>
+          <span
+            ><img
+              width="16"
+              height="16"
+              src="https://img.icons8.com/material/24/sort-down--v1.png"
+              alt="sort-down--v1"
+          /></span>
+        </div>
+        <div class="menu-item-list">
+          <li>Experts search</li>
+          <li>Value Chain</li>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <header class="header">
+        <span id="title">Kanban View</span>
+        <div class="search-box">
+          <img
+            width="20"
+            height="20"
+            src="https://img.icons8.com/ios/50/search--v1.png"
+            alt="search--v1"
+          />
+          <input
+            type="text"
+            placeholder="Search By Project Name, Client Name"
+          />
+        </div>
+        <div class="tools">
+          <button class="btn">
+            <img
+              width="12"
+              height="12"
+              src="https://img.icons8.com/android/24/ffffff/plus.png"
+              alt="plus"
+            />
+            &nbsp; New Project &nbsp;
+          </button>
+          <button class="btn" id="filter">
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/windows/20/ffffff/filter.png"
+              alt="filter"
+            />
+          </button>
+          <div class="sort">
+            <span
+              ><img
+                width="16"
+                height="16"
+                src="https://img.icons8.com/fluency-systems-regular/48/health-data.png"
+                alt="health-data"
+            /></span>
+            <span>
+              <img
+                width="16"
+                height="16"
+                src="https://img.icons8.com/material-rounded/24/list.png"
+                alt="list"
+              />
+            </span>
+            <span class="btn-tool">
+              <img
+                width="16"
+                height="16"
+                src="https://img.icons8.com/material-rounded/24/ffffff/timeline-week.png"
+                alt="timeline-week"
+              />
+            </span>
+          </div>
+        </div>
+
+        <div class="user">
+          <span>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-glyphs/30/user--v1.png"
+              alt="user--v1"
+            />
+          </span>
+          <span class="username"> Vijay Sharma </span>
+          <span
+            ><img
+              width="12"
+              height="12"
+              src="https://img.icons8.com/material/24/sort-down--v1.png"
+              alt="sort-down--v1"
+          /></span>
+        </div>
+      </header>
+      <div class="tabs">
+        <span>CE Experts</span>
+        <span>PE Experts</span>
+        <hr />
+      </div>
+      <div class="buttons">
+        <button class="btn-tab one">Identified</button>
+        <button class="btn-tab two">Contacted</button>
+        <button class="btn-tab three">Refused</button>
+        <button class="btn-tab four">Onboarding</button>
+        <button class="btn-tab five">Confirmed</button>
+      </div>
+      <div class="projects">
+        <div class="project-head">
+          <h5>Project Name One</h5>
+          <span
+            ><img
+              width="12"
+              height="12"
+              src="https://img.icons8.com/material-outlined/24/security-pass.png"
+              alt="security-pass"
+          /></span>
+          <span>MA6337</span>
+        </div>
+        <div class="card-container">
+          <div class="card one c1">
+            <div class="search-box">
+              <input type="text" placeholder="Search By Name" />
+            </div>
+            <div class="people" id="first">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Mir Azhar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Mir Azhar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img
+                    width="24"
+                    height="24"
+                    src="https://img.icons8.com/color/48/user-female-circle--v1.png"
+                    alt="user-female-circle--v1"
+                  />
+                  </div>
+                  <span class="username">Riya Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img
+                    width="24"
+                    height="24"
+                    src="https://img.icons8.com/color/48/user-female-circle--v1.png"
+                    alt="user-female-circle--v1"
+                  />
+                  </div>
+                  <span class="username">Riya Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Anil Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Anil Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/officel/24/circled-user-male-skin-type-5.png" alt="circled-user-male-skin-type-5"/>
+                  </div>
+                  <span class="username">Atul Gupta</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/officel/24/circled-user-male-skin-type-5.png" alt="circled-user-male-skin-type-5"/>
+                  </div>
+                  <span class="username">Atul Gupta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card two c2">
+            <div class="search-box">
+              <input type="text" placeholder="Search By Name" />
+            </div>
+            <div class="people" id="second">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Anil Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Anil sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card three c3">
+            <div class="people s1">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div> <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card four c4">
+            <div class="people s1">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card five c5">
+            <div class="people s1">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="project-head">
+          <h5>Project Name One</h5>
+          <span
+            ><img
+              width="12"
+              height="12"
+              src="https://img.icons8.com/material-outlined/24/security-pass.png"
+              alt="security-pass"
+          /></span>
+          <span>MA6337</span>
+        </div>
+        <div class="card-container">
+          <div class="card one c1">
+            <div class="search-box">
+              <input type="text" placeholder="Search By Name" />
+            </div>
+            <div class="people" id="first">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Mir Azhar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Mir Azhar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img
+                    width="24"
+                    height="24"
+                    src="https://img.icons8.com/color/48/user-female-circle--v1.png"
+                    alt="user-female-circle--v1"
+                  />
+                  </div>
+                  <span class="username">Riya Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img
+                    width="24"
+                    height="24"
+                    src="https://img.icons8.com/color/48/user-female-circle--v1.png"
+                    alt="user-female-circle--v1"
+                  />
+                  </div>
+                  <span class="username">Riya Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Anil Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Anil Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/officel/24/circled-user-male-skin-type-5.png" alt="circled-user-male-skin-type-5"/>
+                  </div>
+                  <span class="username">Atul Gupta</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/officel/24/circled-user-male-skin-type-5.png" alt="circled-user-male-skin-type-5"/>
+                  </div>
+                  <span class="username">Atul Gupta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card two c2">
+            <div class="search-box">
+              <input type="text" placeholder="Search By Name" />
+            </div>
+            <div class="people" id="second">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Anil Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Anil sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card three c3">
+            <div class="people s1">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div> <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card four c4">
+            <div class="people s1">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card five c5">
+            <div class="people s1">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="project-head">
+          <h5>Project Name One</h5>
+          <span
+            ><img
+              width="12"
+              height="12"
+              src="https://img.icons8.com/material-outlined/24/security-pass.png"
+              alt="security-pass"
+          /></span>
+          <span>MA6337</span>
+        </div>
+        <div class="card-container">
+          <div class="card one c1">
+            <div class="search-box">
+              <input type="text" placeholder="Search By Name" />
+            </div>
+            <div class="people" id="first">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Mir Azhar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Mir Azhar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img
+                    width="24"
+                    height="24"
+                    src="https://img.icons8.com/color/48/user-female-circle--v1.png"
+                    alt="user-female-circle--v1"
+                  />
+                  </div>
+                  <span class="username">Riya Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img
+                    width="24"
+                    height="24"
+                    src="https://img.icons8.com/color/48/user-female-circle--v1.png"
+                    alt="user-female-circle--v1"
+                  />
+                  </div>
+                  <span class="username">Riya Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Anil Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Anil Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/officel/24/circled-user-male-skin-type-5.png" alt="circled-user-male-skin-type-5"/>
+                  </div>
+                  <span class="username">Atul Gupta</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/officel/24/circled-user-male-skin-type-5.png" alt="circled-user-male-skin-type-5"/>
+                  </div>
+                  <span class="username">Atul Gupta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card two c2">
+            <div class="search-box">
+              <input type="text" placeholder="Search By Name" />
+            </div>
+            <div class="people" id="second">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Anil Sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Anil sharma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card three c3">
+            <div class="people s1">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div> <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card four c4">
+            <div class="people s1">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-5--v1.png" alt="circled-user-male-skin-type-5--v1"/>
+                  </div>
+                  <span class="username">Vijay Kumar</span>
+                </div>
+              </div>
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card five c5">
+            <div class="people s1">
+              <div class="people-detail">
+                <div class="client">
+                  <div>
+                    <img width="24" height="24" src="https://img.icons8.com/color/24/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1"/>
+                  </div>
+                  <span class="username">Monoj Verma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+  </body>
+</html>
